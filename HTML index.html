@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte: Produtividade e Meio Ambiente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container animate-fade">
+            <h1>Agro<span>Forte</span></h1>
+            <nav>
+                <a href="#sobre">Equilíbrio</a>
+                <a href="#pilares">Pilares</a>
+                <a href="#simulador">Simulador</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Produzir Mais, Preservar Sempre</h2>
+            <p>O futuro da agricultura está na união entre a alta tecnologia no campo e o respeito à biodiversidade.</p>
+            <a href="#simulador" class="btn-main">Simular Impacto</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container section">
+        <h2>O Grande Desafio Alimentar e Ambiental</h2>
+        <p>Alimentar uma população global em crescimento exige eficiência máxima. O <strong>Agro Forte</strong> prova que o aumento da produtividade por hectare reduz a necessidade de abertura de novas áreas, protegendo nossas florestas e recursos hídricos através de práticas inteligentes.</p>
+    </section>
+
+    <section id="pilares" class="bg-light">
+        <div class="container section">
+            <h2 class="text-center">Práticas do Agro Sustentável</h2>
+            <div class="grid-pilares">
+                <div class="card">
+                    <h3>Plantio Direto</h3>
+                    <p>Protege o solo contra a erosão, mantém a umidade e sequestra carbono da atmosfera de forma natural.</p>
+                </div>
+                <div class="card">
+                    <h3>Tecnologia e Precisão</h3>
+                    <p>Uso de drones e sensores para aplicar insumos e água apenas onde é necessário, evitando desperdícios.</p>
+                </div>
+                <div class="card">
+                    <h3>Integração Lavoura-Pecuária</h3>
+                    <p>Diversifica a produção na mesma área, otimizando o ecossistema e regenerando pastagens degradadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="container section">
+        <div class="simulador-box">
+            <h2>Simulador de Impacto Sustentável</h2>
+            <p>Escolha o tamanho da propriedade e veja o impacto estimado ao adotar tecnologias de precisão e manejo sustentável.</p>
+            
+            <div class="form-group">
+                <label for="hectares">Tamanho da Propriedade (em Hectares):</label>
+                <input type="number" id="hectares" min="1" value="100" placeholder="Ex: 150">
+            </div>
+
+            <button id="btn-calcular" class="btn-main">Calcular Benefícios</button>
+
+            <div id="resultados" class="hidden">
+                <h3>Resultados Estimados (Anual):</h3>
+                <ul>
+                    <li>💧 <strong>Água Economizada:</strong> <span id="res-agua">0</span> litros.</li>
+                    <li>🌱 <strong>Redução de Insumos Químicos:</strong> <span id="res-insumos">0</span>%.</li>
+                    <li>🚜 <strong>Aumento de Produtividade:</strong> <span id="res-prod">0</span>% esperado.</li>
+                </ul>
+                <p class="Nota">*Dados baseados em médias de fazendas de precisão adaptadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agro Forte Sustentável. Desenvolvido com foco no futuro do planeta.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
